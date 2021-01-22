@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyecto PaginasWeb //Registro de Venta de VideoJuegos</title>
+    <link rel="stylesheet" href = "https://stackpath.bootstrapcdn.com/bootswatch/4.5.2/sketchy/bootstrap.min.css"
+</head>
+<body style="background-image: url(https://img.freepik.com/free-vector/colorful-background-videogame-flat-design_23-2147567954.jpg?size=626&ext=jpg);background-size: 100% 100%;">
+
+    <div class="container p-4">
+<div class="row">
+    <div class="col-md-6">
+        <div class="card">
+            <div class="card-body">
+                <h1 class="h4">🌟Añadir Videojuegos🌟</h1>
+                <form id="task-form">
+                    <div class="form-group">
+                        <input type="text" id="task-title" class="form-control" placeholder="Nombre del VideoJuego🎮" autofocus>
+                    </div>
+                    <div class="form-group">
+                        <textarea  id="task-description" rows="3" class="form-control" placeholder="Descripción📜"></textarea>            
+                    </div>
+                    <div class="form-group">
+                        <input type="text" id="task-price" class="form-control" placeholder="Precio💵" autofocus>
+                    </div>
+                    
+                    
+                    <button class="btn btn-primary" id="btn-task-form">
+                        🔐 Guardar
+                    </button>
+                    <h2 class="h5">Copyright © 2021 Gonzalez Hernandez Edgar Alejandro.</h1>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-6" id="tasks-container"></div>
+</div>
+
+    </div>
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/8.2.3/firebase-app.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+     <script src="https://www.gstatic.com/firebasejs/7.14.4/firebase-firestore.js"></script>
+
+<script>
+  
+  var firebaseConfig = {
+    apiKey: "AIzaSyBynsBGRh0QjfOG1f3tUgnuYE4iiMxpvXo",
+    authDomain: "fast-crud-fb-c2c80.firebaseapp.com",
+    projectId: "fast-crud-fb-c2c80",
+    storageBucket: "fast-crud-fb-c2c80.appspot.com",
+    messagingSenderId: "486332575207",
+    appId: "1:486332575207:web:ef2b352e2684c91077e142"
+  };
+  
+  firebase.initializeApp(firebaseConfig);
+</script>
+
+    <script src="index.js"></script>
+</body>
+</html>
